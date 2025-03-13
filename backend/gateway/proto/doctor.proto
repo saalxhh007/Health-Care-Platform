@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package doctor;
+
+service DoctorService {
+    rpc streamDoctorAvailability (AvailabilityRequest) returns (AvailabilityResponse);
+}
+
+message AvailabilityRequest {
+    int32 id = 1;
+}
+
+message AvailabilityResponse {
+    bool available = 1;
+}

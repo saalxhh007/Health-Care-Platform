@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package user;
+
+service UserService {
+    rpc GetDoctorPatients (DoctorRequest) returns (PatientList);
+}
+
+message DoctorRequest {
+    int32 doctor_id = 1;
+}
+
+message Patient {
+    int32 userId = 1;
+    string name = 2;
+    string email = 3;
+    string phoneNumber = 5;
+    int32 age = 4;
+    repeated string gender = 6;
+    repeated string medications = 7;
+}
+message PatientList {
+    repeated Patient patients = 1;
+}

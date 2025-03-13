@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package appointment;
+
+service AppoinmentService {
+    rpc BookAppointment (BookAppointmentRequest) returns (BookAppointmentResponse);
+    rpc GetAppointmentsByDoctor (GetAppointmentsByDoctorRequest) returns (GetAppointmentsByDoctorResponse);
+}
+
+message BookAppointmentRequest {
+    string doctorId = 1;
+    string patientId = 2;
+    string date = 3;
+}
+
+message BookAppointmentResponse {
+    string id = 1;
+    string doctorId = 2;
+    string patientId = 3;
+    string date = 4;
+    string status = 5;
+}
+
+message GetAppointmentsByDoctorRequest {
+    string doctorId = 1;
+}
+
+message GetAppointmentsByDoctorResponse {
+    repeated BookAppointmentResponse appointments = 1;
+}

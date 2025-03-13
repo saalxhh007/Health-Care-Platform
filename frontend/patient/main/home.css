@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+header h1 a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2E6072;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header ul li {
+    list-style: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    color: #2E6072;
+    &:hover {
+        color: #211428;
+    }
+}
+header li a {
+    color: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+header > a {
+    color: #65C8D0;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s;
+}
+header > a:hover {
+    color: #2b6b6f;
+}
+
+.header {
+    position: relative;
+    height: 41vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.header .header-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 80%;
+    height: 100%;
+}
+.header .header-image img {
+    width: 100%;
+    height: 100%;
+}
+.header .header-components {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    width: 40%;
+    height: 100%;
+    border-radius: 0% 50% 0% 0%;
+    padding: 20px;
+    background-color: #2E6072;
+    color: #FFF;
+}
+.header .header-components h1 {
+    font-size: max(4.5vw, 22px);
+    font-weight: 500;
+}
+.header .header-components p {
+    font-size: 1rem;
+    line-height: 1.7vw;
+}
+.header .header-components .buttons button{
+    background-color: #FFF;
+    color: #2E6072;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 1vw 2.3vw;
+    border-radius: 50px;
+    font-size: max(1vw, 13px);
+    cursor: pointer;
+}
+
+.services section {
+    margin-top: 30px;
+}
+.services section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services section .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.services section .service-card:hover {
+    transform: scale(1.05);
+}
+.features {
+    margin-top: 30px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.features .features-image {
+    width: 50%;
+    height: auto;
+}
+.features .features-image img {
+    width: 100%;
+    height: auto;
+}
+.features .features-components {
+    width: 50%;
+    padding: 20px;
+    background-color: #FDF9F0;
+    color: #2E6072;
+}
+.features .features-components h1 {
+    font-size: max(4.5vw, 22px);
+    font-weight: 500;
+}
+.features .features-components p {
+    font-size: 1rem;
+    line-height: 1.7vw;
+}
+.features .features-components .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.features .features-components .buttons button {
+    padding: 1vw 2.3vw;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: max(1.5vw,13px);
+    cursor: pointer;
+}
+.features .features-components .buttons button:first-child {
+    background-color: #64C299;
+    color: #fff;
+    transition: 0.5s;
+}
+.features .features-components .buttons button:last-child{
+    background-color: transparent;
+    color: #64C299;
+    border: 3px solid #64C299;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.features .features-components .buttons button:last-child:hover {
+    background-color: #64C299;
+    color: #fff;
+}
+.features .features-components .buttons button:first-child:hover {
+    background-color: #FDF9F0;
+    color: #64C299;
+    border: 3px solid #64C299;
+}
+
+footer {
+    background-color: #2E6072;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}

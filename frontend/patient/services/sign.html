@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sign.css">
+    <title>Clinique - Sign/Log</title>
+</head>
+<body>
+    <header onclick="location.href='./../main/home.html'">
+        <h1>MediX</h1>
+    </header>
+    <main>
+        <section class="sign-in" id="sign-in">
+            <div class="sign-in-left">
+                <h2>Sign In To Medix</h2>
+                <div class="media-icons">
+                    <img src="./../images/facebook-nouveau-icon.png" alt="">
+                    <img src="./../images/linkedin-icons.png" alt="">
+                    <img src="./../images/google-icon-logo.png" alt="">
+                </div>
+                <p>Or Use Your Email Account</p>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="sign-in-right">
+                <h2>Welcome, Friend</h2>
+                <p>Enter Your Personal Informations <br>
+                And Start Your Jouney With Us</p>
+                <button id="SignUpButton">Sign Up</button>
+            </div>
+        </section>
+        <section class="sign-up" id="sign-up" style="display: none;">
+            <div class="sign-up-left">  
+                <form>
+                <h1>Sign Up</h1>
+                <div class="text-field">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" name="re-password" id="re-password" placeholder="Retype Password">
+                <div class="text-field" style="display: flex; gap: 5px;">
+                    <input type="number" id="age" name="age" placeholder="Age">
+                    <select name="gender" id="gender">
+                        <option value="Male" selected>Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="text-field" style="display: flex; gap: 5px;">
+                    <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+                    <select name="state" id="state">
+                        <option value="adrar" selected>Adrar</option>
+                        <option value="chlef">Chlef</option>
+                        <option value="laghouat">Laghouat</option>
+                        <option value="oum-el-bouaghi">Oum El Bouaghi</option>
+                        <option value="batna">Batna</option>
+                        <option value="bejaia">Béjaïa</option>
+                        <option value="biskra">Biskra</option>
+                        <option value="bechar">Béchar</option>
+                        <option value="blida">Blida</option>
+                        <option value="bouira">Bouira</option>
+                        <option value="tamanrasset">Tamanrasset</option>
+                        <option value="tebessa">Tébessa</option>
+                        <option value="tlemcen">Tlemcen</option>
+                        <option value="tiaret">Tiaret</option>
+                        <option value="tizi-ouzou">Tizi Ouzou</option>
+                        <option value="algiers">Algiers</option>
+                        <option value="djelfa">Djelfa</option>
+                        <option value="jijel">Jijel</option>
+                        <option value="setif">Sétif</option>
+                        <option value="saida">Saïda</option>
+                        <option value="skikda">Skikda</option>
+                        <option value="sidi-bel-abbes">Sidi Bel Abbès</option>
+                        <option value="annaba">Annaba</option>
+                        <option value="guelma">Guelma</option>
+                        <option value="constantine">Constantine</option>
+                        <option value="medea">Médéa</option>
+                        <option value="mostaganem">Mostaganem</option>
+                        <option value="msila">M'Sila</option>
+                        <option value="mascara">Mascara</option>
+                        <option value="ouargla">Ouargla</option>
+                        <option value="oran">Oran</option>
+                        <option value="el-bayadh">El Bayadh</option>
+                        <option value="illizi">Illizi</option>
+                        <option value="bordj-bou-arreridj">Bordj Bou Arréridj</option>
+                        <option value="boumerdes">Boumerdès</option>
+                        <option value="el-tarf">El Tarf</option>
+                        <option value="tindouf">Tindouf</option>
+                        <option value="tissemsilt">Tissemsilt</option>
+                        <option value="el-oued">El Oued</option>
+                        <option value="khenchela">Khenchela</option>
+                        <option value="souk-ahras">Souk Ahras</option>
+                        <option value="tipaza">Tipaza</option>
+                        <option value="mila">Mila</option>
+                        <option value="ain-defla">Aïn Defla</option>
+                        <option value="naama">Naâma</option>
+                        <option value="ain-temouchent">Aïn Témouchent</option>
+                        <option value="ghardaia">Ghardaïa</option>
+                        <option value="relizane">Relizane</option>
+                        <option value="timimoun">Timimoun</option>
+                        <option value="bordj-badji-mokhtar">Bordj Badji Mokhtar</option>
+                        <option value="ouled-djellal">Ouled Djellal</option>
+                        <option value="beni-abbes">Béni Abbès</option>
+                        <option value="in-salah">In Salah</option>
+                        <option value="in-ghar">In Ghar</option>
+                        <option value="touggourt">Touggourt</option>
+                        <option value="djanet">Djanet</option>
+                        <option value="el-mghair">El M'Ghair</option>
+                        <option value="el-menia">El Menia</option>
+                    </select>
+                </div>
+                <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="sign-up-right">
+                <h2>Welcome Back!</h2>
+                <p>Keep Track OF All Of All <br>
+                   Medical Informations </p>
+                <button id="SignInButton">Sign In</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        {
+            document.getElementById('SignUpButton').addEventListener("click", () => {
+                document.getElementById("sign-in").style.display = "none";
+                document.getElementById("sign-up").style.display = "flex";
+            });
+
+            document.getElementById("SignInButton").addEventListener("click", () => {
+                document.getElementById("sign-up").style.display = "none";
+                document.getElementById("sign-in").style.display = "flex";
+            })
+        }
+    </script>
+</body>
+</html>

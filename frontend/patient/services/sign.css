@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+main {
+    height: 80%;
+}
+main .sign-in,
+main .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .sign-in .sign-in-left,
+main .sign-up .sign-up-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 30px;
+    font-size: 14px;
+}
+main .sign-in .sign-in-left form,
+main .sign-up .sign-up-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max(23vw,330px);
+}
+main .sign-in .sign-in-left form input,
+main .sign-up .sign-up-left form input {
+    outline: none;
+    border: 1px solid #65C8D0;
+    padding: 10px;
+    border-radius: 10px;
+}
+main .sign-in .sign-in-left form button,
+main .sign-up .sign-up-left form button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #65C8D0;
+    font-size: 15px;
+    cursor: pointer;
+}
+main .sign-in .sign-in-right button, 
+main .sign-up .sign-up-right button {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #65C8D0;
+    font-size: 15px;
+    width: 70%;
+    cursor: pointer;
+}

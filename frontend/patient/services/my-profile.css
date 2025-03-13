@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh; /* Ensure main takes full viewport height */
+}
+main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main header .head-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main header .head-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+main section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+main section nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 50px;
+    width: 100%;
+    height: auto;
+}
+main section nav .left,
+main section nav .right,
+main section nav .center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main section nav .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-radius: 50px;
+    background-color: #64C299;
+    margin: 20px 0;
+}
